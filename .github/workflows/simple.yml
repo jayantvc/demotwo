@@ -1,0 +1,14 @@
+name: first github action workflow1
+
+on : [push]
+
+jobs:
+  run-shel-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "hello there 1234"
+      - name: multiple script
+        run: |
+          node -v
+          npm -v
